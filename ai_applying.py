@@ -1,24 +1,20 @@
-import os
-
 from dotenv import load_dotenv
 from openai import OpenAI
 
 load_dotenv()
-
-print(os.getenv("OPENAI_API_KEY"))
 
 client = OpenAI()
 
 """ codigo doc oficial:
 
 response = client.responses.create(
-    model="gpt-4.1-nano",
+    model="gpt-5-nano",
     input="Write a one-sentence bedtime story about a unicorn."
 )
 print(response.output_text)"""
 
 completion = client.chat.completions.create(
-    model="gpt-4.1-nano",
+    model="gpt-5-nano",
     max_tokens=200,
     temperature=0.5,
     messages=[

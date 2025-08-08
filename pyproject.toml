@@ -1,5 +1,5 @@
 # =============================================================================
-# Reference: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+# Ref: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
 #
 # Os pontos de atenção estão comentados próximo das chaves, aqui só um lembrete
 #
@@ -19,11 +19,19 @@ version = "0.1.0"
 description = "Add description here"
 readme = "README.md"
 # license = "MIT"
-authors = [{ name = "MyName", email = "my@email.com" }]
-requires-python = ">=3.10, <4.0"
+authors = [{ name = "Jadson Nascimento", email = "jadson.nascimento060@academico.ifs.edu.br" }]
+requires-python = ">=3.12, <4.0"
 dependencies = [
+    "chroma>=0.2.0",
+    "chromadb>=1.0.16",
+    "jupyter>=1.1.1",
+    "langchain>=0.3.27",
+    "langchain-community>=0.3.27",
+    "langchain-google-genai>=2.1.9",
+    "langchain-openai>=0.3.28",
     "openai>=1.99.1",
     "pandas>=2.3.1",
+    "pypdf>=5.9.0",
     "python-dotenv>=1.1.0",
     "scikit-learn>=1.7.1",
 ]
